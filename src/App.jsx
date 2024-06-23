@@ -18,7 +18,17 @@ function App()
       }
       else
       {
-        alert("Counter value cannot exceed 20");
+        // alert("Counter value cannot exceed 20");
+        const c = document.createElement('p');
+        c.innerHTML = "Counter value cannot exceed 20";
+        document.getElementById('root').appendChild(c)
+        setTimeout(() => {
+           document.getElementById("root").removeChild(c);
+        }, 3000);
+
+        
+
+
       }
   }
   
@@ -32,7 +42,12 @@ function App()
       }
       else
       {
-        alert("Counter value cannot be less than 0");
+        const c = document.createElement('p');
+        c.innerHTML = "Counter value cannot be less than 0";
+        document.getElementById('root').appendChild(c)
+        setTimeout(() => {
+           document.getElementById("root").removeChild(c);
+        }, 3000);
       }
     }
 
